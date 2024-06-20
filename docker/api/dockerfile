@@ -11,4 +11,4 @@ pip install --upgrade pip && \
 pip install wheel && \
 pip install -r requirements.txt
 EXPOSE 8500
-CMD ["python", "src/api.py"]
+CMD ["python3", "src/api.py"]
