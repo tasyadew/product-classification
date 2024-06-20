@@ -1,0 +1,20 @@
+name: fyp-product-classification
+services:
+  streamlit:
+    build: docker/streamlit
+    image: tasyadew/web-product-classification
+    container_name: streamlit_frontend
+    depends_on:
+      - api
+    ports:
+      - 8501:8501
+    volumes:
+      - ./:/home/
+  api:
+    build: docker/api
+    image: tasyadew/api-product-classification
+    container_name: api_backend
+    ports:
+      - 8500:8500
+    volumes:
+      - ./:/home/

@@ -1,0 +1,13 @@
+.github
+.ipynb_checkpoints
+__pycache__/
+data/
+docker/
+training_log/
+notebook/
+env/
+/env/
+/env
+*.ipynb
+Dockerfile
+docker-compose.yaml

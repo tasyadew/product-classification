@@ -1,0 +1,45 @@
+ # Path related
+raw_dataset_dir: dataset/1 - raw data/
+# Data Preparation Result
+train_set_path:
+- dataset/2 - processed/X_train.pkl
+- dataset/2 - processed/y_train.pkl
+valid_set_path:
+- dataset/2 - processed/X_valid.pkl
+- dataset/2 - processed/y_valid.pkl
+test_set_path:
+- dataset/2 - processed/X_test.pkl
+- dataset/2 - processed/y_test.pkl
+# Final Data for Modeling (BoW)
+train_bow_set_path:
+- dataset/3 - final/X_train_bow.pkl
+- dataset/3 - final/y_train_encoded.pkl
+valid_bow_set_path:
+- dataset/3 - final/X_valid_bow.pkl
+- dataset/3 - final/y_valid_encoded.pkl
+test_bow_set_path:
+- dataset/3 - final/X_test_bow.pkl
+- dataset/3 - final/y_test_encoded.pkl
+# Final Data for Modeling (TFIDF)
+train_tfidf_set_path:
+- dataset/3 - final/X_train_tfidf.pkl
+- dataset/3 - final/y_train_encoded.pkl
+valid_tfidf_set_path:
+- dataset/3 - final/X_valid_tfidf.pkl
+- dataset/3 - final/y_valid_encoded.pkl
+test_tfidf_set_path:
+- dataset/3 - final/X_test_feng.pkl
+- dataset/3 - final/X_test_tfidf.pkl
+
+model_wordwvec: model/word2vec.model
+
+count_vectorizer: model/count_vectorizer_model.pkl
+
+tfidf_vectorizer: model/tfidf_vectorizer_model.pkl
+
+label_encoder: model/label_encoder.pkl
+
+model_final: model/lr_best_cv.pkl
+
+# Debug related
+print_debug: true
