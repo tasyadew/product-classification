@@ -10,5 +10,5 @@ apt-get install -y libgomp1 && \
 pip install --upgrade pip && \
 pip install wheel && \
 pip install -r requirements.txt
-EXPOSE 8080
+EXPOSE 8500
 CMD ["python", "src/api.py"]
