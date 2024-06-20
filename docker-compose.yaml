@@ -2,7 +2,7 @@ name: fyp-product-classification
 services:
   app:
     build: docker/app
-    image: tasyadew/web-product-classification
+    image: tasyadew/app-product-classification
     container_name: app_frontend
     depends_on:
       - api

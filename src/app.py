@@ -9,7 +9,7 @@ st.title("AEON Product Classification")
 user_input = st.text_input("Enter a product name:")
 
 if st.button("Predict Text"):
-    api_url = "http://127.0.0.1:8500/predict/" 
+    api_url = "http://api:8500/predict/" 
 
     payload = {"title": user_input}
     response = requests.post(api_url, json=payload)
@@ -31,7 +31,7 @@ uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 # For CSV prediction
 if st.button("Predict CSV") and uploaded_file is not None:
 
-    api_url = "http://127.0.0.1:8500/predict/" 
+    api_url = "http://api:8500/predict/" 
     df = pd.read_csv(uploaded_file)
     
     # Check if the CSV file has the 'title' column
