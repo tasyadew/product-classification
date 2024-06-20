@@ -1,9 +1,9 @@
 name: fyp-product-classification
 services:
-  streamlit:
-    build: docker/streamlit
+  app:
+    build: docker/app
     image: tasyadew/web-product-classification
-    container_name: streamlit_frontend
+    container_name: app_frontend
     depends_on:
       - api
     ports:
