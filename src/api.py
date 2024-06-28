@@ -128,7 +128,7 @@ def predict(data: api_data):
     }
 
     if predicted_class in class_mapping:
-        return {class_mapping[predicted_class]}
+        return class_mapping[predicted_class]
     else:
         return "Unknown Category"
 
